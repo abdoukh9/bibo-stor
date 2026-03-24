@@ -1,0 +1,3 @@
+function buyProduct(productName) {
+    alert("تم اختيار: " + productName);
+}

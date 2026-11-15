@@ -1,42 +1,13 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <title>Bibo Store</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        <h1>Bibo Store</h1>
-        <p>أفضل المنتجات بأفضل الأسعار</p>
-    </header>
-
-    <section class="products">
-
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
-            <h2>منتج 1</h2>
-            <p>100 درهم</p>
-            <button onclick="buyProduct('منتج 1')">شراء</button>
-        </div>
-
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
-            <h2>منتج 2</h2>
-            <p>150 درهم</p>
-            <button onclick="buyProduct('منتج 2')">شراء</button>
-        </div>
-
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
-            <h2>منتج 3</h2>
-            <p>200 درهم</p>
-            <button onclick="buyProduct('منتج 3')">شراء</button>
-        </div>
-
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111827"><title>BIBO STOR | ملابس وأحذية</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body><div class="notice">✨ عروض الافتتاح — اكتشف تشكيلتنا الجديدة</div><header><a class="brand" href="#"><b>B</b><span>BIBO <em>STOR</em><small>STYLE YOUR WAY</small></span></a><nav><a href="#home">الرئيسية</a><a href="#products">المنتجات</a><a href="#about">من نحن</a></nav><div class="tools"><select id="lang"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option><option value="es">Español</option></select><button id="showCart">🛍️ السلة <span id="count">0</span></button></div></header>
+<main><section class="hero" id="home"><div><small class="eyebrow">BIBO STOR — NEW COLLECTION</small><h1>أناقتك تبدأ<br>من هنا.</h1><p>اكتشف أحدث الملابس والأحذية بلمسة عصرية وأسعار مناسبة.</p><a class="cta" href="#products">تسوق الآن ←</a></div><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1100&q=85" alt="مجموعة أزياء"></section>
+<div class="perks"><span>🚚 توصيل لجميع المدن</span><span>💳 الدفع عند الاستلام (تجريبي)</span><span>💬 خدمة الزبناء</span></div>
+<section class="section" id="products"><div class="heading"><div><small class="eyebrow">CHOOSE YOUR LOOK</small><h2>تسوق حسب الفئة</h2></div><div class="filters"><button class="active" data-filter="all">الكل</button><button data-filter="men">رجال</button><button data-filter="women">نساء</button><button data-filter="shoes">أحذية</button></div></div><div class="grid">
+<article class="product" data-cat="men"><div class="photo"><label>NEW</label><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="تيشيرت"></div><div class="details"><small>MEN / CLOTHING</small><h3>تيشيرت أساسي</h3><b>129 درهم</b><button class="add" data-name="تيشيرت أساسي" data-price="129">أضف إلى السلة</button></div></article>
+<article class="product" data-cat="women"><div class="photo"><label>TREND</label><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80" alt="إطلالة نسائية"></div><div class="details"><small>WOMEN / CLOTHING</small><h3>إطلالة أنيقة</h3><b>249 درهم</b><button class="add" data-name="إطلالة أنيقة" data-price="249">أضف إلى السلة</button></div></article>
+<article class="product" data-cat="shoes"><div class="photo"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="حذاء رياضي"></div><div class="details"><small>SHOES / SPORT</small><h3>حذاء رياضي</h3><b>399 درهم</b><button class="add" data-name="حذاء رياضي" data-price="399">أضف إلى السلة</button></div></article>
+<article class="product" data-cat="men"><div class="photo"><img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80" alt="جاكيت"></div><div class="details"><small>MEN / OUTERWEAR</small><h3>جاكيت عصري</h3><b>459 درهم</b><button class="add" data-name="جاكيت عصري" data-price="459">أضف إلى السلة</button></div></article></div><p class="hint">* المنتجات والصور والأسعار تجريبية، وسنغيّرها عندما تزودنا بمنتجاتك الحقيقية.</p></section>
+<section class="banner" id="about"><div><small class="eyebrow">BIBO STOR</small><h2>اختَر أسلوبك.<br>اترك بصمتك.</h2><p>قطع مختارة لترافقك كل يوم.</p></div><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85" alt="ستايل عصري"></section></main>
+<footer><a class="brand" href="#"><b>B</b><span>BIBO <em>STOR</em><small>STYLE YOUR WAY</small></span></a><span>© 2026 BIBO STOR</span><small>نسخة عرض تجريبية</small></footer>
+<div class="shade" id="shade"></div><aside id="cart"><div class="carthead"><h2>سلة التسوق</h2><button id="hideCart">✕</button></div><div id="items">السلة فارغة حالياً.</div><p>المجموع: <strong id="total">0 درهم</strong></p><form id="order"><input required placeholder="الاسم الكامل"><input required type="tel" placeholder="رقم الهاتف"><input required placeholder="المدينة والعنوان"><button class="cta">إرسال طلب تجريبي</button></form><p class="hint">لن يتم إرسال طلب حقيقي أو تحصيل أي مبلغ في هذه النسخة.</p></aside><script src="app.js"></script></body></html>

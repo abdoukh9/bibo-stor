@@ -91,7 +91,7 @@ function renderLanguage(){
   document.querySelector(".banner .eyebrow").textContent=t.bannerEyebrow;
   document.querySelector(".banner h2").innerHTML=t.bannerTitle;
   document.querySelector(".banner p").textContent=t.bannerText;
-  document.querySelector("footer span").textContent=t.copyright;
+  document.querySelector("footer > span").textContent=t.copyright;
   document.querySelector("footer small").textContent=t.demo;
   $("showCart").innerHTML=t.cart+' <span id="count">0</span>';
   document.querySelector(".carthead h2").textContent=t.cartTitle;

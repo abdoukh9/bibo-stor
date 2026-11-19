@@ -148,6 +148,8 @@ $$;
 grant usage on schema public to anon, authenticated;
 grant select on public.categories, public.products, public.shipping_rates to anon, authenticated;
 grant select on public.profiles, public.orders, public.order_items to authenticated;
+grant insert, update, delete on public.profiles, public.categories, public.products,
+  public.shipping_rates, public.orders, public.order_items to authenticated;
 grant all on public.profiles, public.categories, public.products,
   public.shipping_rates, public.orders, public.order_items to service_role;
 grant execute on function public.is_admin() to authenticated;
